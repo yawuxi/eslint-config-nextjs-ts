@@ -1,4 +1,3 @@
-
 import typescriptParser from '@typescript-eslint/parser'
 import globals from 'globals';
 import nextjsPlugin from '@next/eslint-plugin-next';
@@ -6,7 +5,9 @@ import typeScriptPlugin from '@typescript-eslint/eslint-plugin'
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import importPlugin from 'eslint-plugin-import';
+import stylisticPlugin from '@stylistic/eslint-plugin'
 import base from './lib/base.js'
+import stylistic from './lib/stylistic.js'
 import typescript from './lib/typescript.js'
 import react from './lib/react.js'
 import imports from './lib/import.js'
@@ -37,6 +38,7 @@ export default {
     }
   },
   plugins: {
+    '@stylistic': stylisticPlugin,
     '@next/next': nextjsPlugin,
     'import': importPlugin,
     'react': reactPlugin,
@@ -53,6 +55,7 @@ export default {
     ...nextjsPlugin.configs.recommended.rules,
     ...typeScriptPlugin.configs.recommended.rules,
     ...base,
+    ...stylistic,
     ...typescript,
     ...react,
     ...imports,

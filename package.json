@@ -1,6 +1,6 @@
 {
   "name": "@yawuxi/eslint-config-nextjs",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "ESLint configuration for NextJs + Typescript development",
   "keywords": [
     "eslint",
@@ -29,6 +29,7 @@
   "type": "module",
   "dependencies": {
     "@next/eslint-plugin-next": "^15.3.1",
+    "@stylistic/eslint-plugin": "^5.2.3",
     "@typescript-eslint/eslint-plugin": "^8.31.0",
     "@typescript-eslint/parser": "^8.31.0",
     "eslint": ">= 9",

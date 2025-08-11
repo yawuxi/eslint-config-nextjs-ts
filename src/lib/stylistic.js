@@ -1,0 +1,121 @@
+export default {
+  "@stylistic/semi": "error",
+  "@stylistic/semi-style": "error",
+  "@stylistic/no-extra-semi": "error",
+  "@stylistic/space-unary-ops": "error",
+  "@stylistic/spaced-comment": ["error", "never"],
+  "@stylistic/array-bracket-newline": [
+    "error",
+    {
+      multiline: true,
+      minItems: 3,
+    },
+  ],
+  "@stylistic/array-element-newline": [
+    "error",
+    {
+      multiline: true,
+      minItems: 3,
+    },
+  ],
+  "@stylistic/array-bracket-spacing": "error",
+  "@stylistic/arrow-spacing": "error",
+  "@stylistic/block-spacing": "error",
+  "@stylistic/brace-style": "error",
+  "@stylistic/comma-dangle": [
+    "error",
+    {
+      arrays: "never",
+      objects: "always-multiline",
+      imports: "never",
+      exports: "never",
+      functions: "never",
+    },
+  ],
+  "@stylistic/comma-spacing": "error",
+  "@stylistic/comma-style": "error",
+  "@stylistic/computed-property-spacing": "error",
+  "@stylistic/dot-location": ["error", "property"],
+  "@stylistic/eol-last": ["error", "always"],
+  "@stylistic/function-call-spacing": "error",
+  "@stylistic/function-call-argument-newline": ["error", "consistent"],
+  "@stylistic/function-paren-newline": [
+    "error",
+    {
+      minItems: 3,
+    },
+  ],
+  "@stylistic/implicit-arrow-linebreak": "error",
+  "@stylistic/indent": [
+    "error",
+    2,
+    {
+      SwitchCase: 1,
+      VariableDeclarator: 2,
+      MemberExpression: 1,
+      FunctionExpression: {
+        body: 1,
+        parameters: 2,
+      },
+      CallExpression: {
+        arguments: 1,
+      },
+      ArrayExpression: 1,
+      ObjectExpression: 1,
+      ImportDeclaration: 1,
+      flatTernaryExpressions: false,
+      offsetTernaryExpressions: true,
+      ignoreComments: false,
+    },
+  ],
+  "@stylistic/jsx-quotes": ["error", "prefer-single"],
+  "@stylistic/key-spacing": "error",
+  "@stylistic/keyword-spacing": "error",
+  "@stylistic/linebreak-style": ["error", "unix"],
+  "@stylistic/max-statements-per-line": "error",
+  "@stylistic/newline-per-chained-call": [
+    "error",
+    {
+      ignoreChainWithDepth: 1,
+    },
+  ],
+  "@stylistic/no-mixed-spaces-and-tabs": "error",
+  "@stylistic/no-multi-spaces": "error",
+  "@stylistic/no-multiple-empty-lines": [
+    "error",
+    {
+      max: 2,
+      maxEOF: 1,
+      maxBOF: 0,
+    },
+  ],
+  "@stylistic/no-trailing-spaces": "error",
+  "@stylistic/no-whitespace-before-property": "error",
+  "@stylistic/object-curly-newline": [
+    "error",
+    {
+      ObjectPattern: {
+        multiline: true,
+        minProperties: 3,
+      },
+      ImportDeclaration: {
+        multiline: true,
+        minProperties: 3,
+      },
+      ExportDeclaration: {
+        multiline: true,
+        minProperties: 3,
+      },
+    },
+  ],
+  "@stylistic/object-curly-spacing": ["error", "always"],
+  "@stylistic/object-property-newline": ["error", { allowAllPropertiesOnSameLine: true }],
+  "@stylistic/operator-linebreak": ["error", "none", { overrides: { ":": "before" } }],
+  "@stylistic/quotes": ["error", "single"],
+  "@stylistic/space-before-blocks": "error",
+  "@stylistic/space-in-parens": "error",
+  "@stylistic/switch-colon-spacing": "error",
+  "@stylistic/template-curly-spacing": "error",
+  "@stylistic/template-tag-spacing": "error",
+  "@stylistic/space-infix-ops": "error",
+}
